@@ -42,5 +42,5 @@ Example:
 
 - Do not show multiple modes to Claude
 - Do not paste mode lists into Claude
-- Do not paste instactions.md into Claude
+- Do not paste instructions.md into Claude
 - Keep injected text flat (no markdown structure)

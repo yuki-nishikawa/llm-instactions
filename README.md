@@ -12,24 +12,27 @@ _common/
   spec.txt          # specification writing
   note.txt          # personal notes (ja)
   explore-jp.txt    # exploration / multi-hypothesis (ja)
-  output-modes/     # symlink targets (same files, alternate path)
-<llm>/
-  inject.sh         # example injection script
-  instactions.md    # usage notes (not for injection)
-  available-modes/  # symlink to _common/output-modes
+claude/
+  inject.sh         # injection helper
+  instructions.md    # usage notes (not for injection)
+github-copilot/
+  inject.sh         # injection helper
+  instructions.md    # usage notes (not for injection)
 ```
 
 ## Usage
 
-Always include `base.txt`. Select exactly one mode.
+Use `inject.sh` with a mode name. Output is copied to clipboard.
 
 ```sh
-cat _common/base.txt _common/thin.txt | pbcopy
-cat _common/base.txt _common/prod.txt | pbcopy
-cat _common/base.txt _common/spec.txt | pbcopy
-cat _common/base.txt _common/note.txt | pbcopy
-cat _common/base.txt _common/explore-jp.txt | pbcopy
+./claude/inject.sh thin
+./claude/inject.sh prod
+./claude/inject.sh spec
+./claude/inject.sh note
+./claude/inject.sh explore-jp
 ```
+
+Paste the result into `CLAUDE.md` (Claude) or `.github/copilot-instructions.md` (GitHub Copilot).
 
 ## Modes
 
@@ -44,5 +47,5 @@ cat _common/base.txt _common/explore-jp.txt | pbcopy
 ## Rules
 
 - One mode per prompt
-- Do not inject `instactions.md`
+- Do not inject `instructions.md`
 - Do not inject multiple modes simultaneously
