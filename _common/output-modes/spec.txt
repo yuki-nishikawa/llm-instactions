@@ -1,0 +1,9 @@
+[MODE: SPEC]
+Output optimization:
+- Precise terms
+- No ambiguity
+- Explicit assumptions
+- No guessing
+- Clear sections
+- Shared reference style
+- Correctness over brevity

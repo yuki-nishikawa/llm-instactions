@@ -1,0 +1,9 @@
+[BASE]
+General behavior:
+- Minimal output
+- Direct
+- No extra explanations
+- No extra features
+- Not for beginners
+- No reuse assumptions
+- Task-local only

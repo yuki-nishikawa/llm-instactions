@@ -1,0 +1,12 @@
+[MODE: SPEC]
+Output optimization:
+- Precise terms
+- No ambiguity
+- Explicit assumptions
+- No guessing
+- Clear sections
+- Shared reference style
+- Correctness over brevity
+- Use numbered sections
+- Define terms before using them
+- Use tables for comparisons
